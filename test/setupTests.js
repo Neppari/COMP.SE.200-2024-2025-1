@@ -1,4 +1,4 @@
-import 'jest-chain';
-import 'jest-extended/all';
+require('jest-chain');
+require('jest-extended/all');
 
 
