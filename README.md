@@ -14,14 +14,17 @@ Individuals who remove or modify the license file will also carry the consequenc
 
 ## Instructions
 
-Install required dependencies (run in the project root):
+Install required dependencies (run in the project root):  
 Command: npm install
 
-Run in root folder to detect issues (bugs, bad patterns etc):
+**Don't do this, codebase gives errors instead of just tests**  
+Run in root folder to detect issues (bugs, bad patterns etc):  
 Command: npm run lint
 
-Run to check formatting, or to autofix it:
-Command: npm run format
+**Don't do this, codebase gives errors instead of just tests**  
+Run to check formatting, or to autofix it:  
+Command: npm run format  
 Command: npm run format:fix
 
-You can now run tests with cd COMP.SE.200-2024-2025-1 then npm test
+Run tests in the root folder:  
+Command: npm test
