@@ -14,6 +14,9 @@ Individuals who remove or modify the license file will also carry the consequenc
 
 ## Instructions
 
+Install required dependencies (run in the project root):
+Command: npm install
+
 Run in root folder to detect issues (bugs, bad patterns etc):
 Command: npm run lint
 
