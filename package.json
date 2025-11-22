@@ -5,10 +5,21 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no tests are implemented yet \" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:e2e": "playwright test",
+    "lint": "eslint src test",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write ."
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "eslint": "^9.39.1",
+    "jest": "^30.2.0",
+    "jest-chain": "^1.1.6",
+    "jest-extended": "^7.0.0",
+    "prettier": "^3.6.2"
+  }
 }

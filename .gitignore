@@ -1,0 +1,65 @@
+# Dependencies
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage and test outputs
+coverage/
+.nyc_output/
+junit.xml
+test-results.xml
+
+# Build / cache
+dist/
+build/
+.cache/
+.tmp/
+tmp/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS-specific
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# IDE / editor settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Package manager locks (ignore non-used ones; keep your primary one tracked)
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
+
+
