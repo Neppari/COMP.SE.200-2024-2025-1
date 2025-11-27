@@ -1,0 +1,1 @@
+import reduce from "../src/reduce";

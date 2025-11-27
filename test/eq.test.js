@@ -1,0 +1,1 @@
+import eq from '../src/eq.js';

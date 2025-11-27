@@ -1,0 +1,1 @@
+import ceil from '../src/ceil.js';

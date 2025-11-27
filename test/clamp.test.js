@@ -1,0 +1,1 @@
+import clamp from '../src/clamp.js';
