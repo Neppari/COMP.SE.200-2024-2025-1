@@ -1,3 +1,5 @@
+//Created with chatGPT 5 mini
+
 import clamp from '../src/clamp.js';
 
 describe('clamp', () => {

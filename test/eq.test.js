@@ -1,3 +1,5 @@
+//Created with chatGPT 5 mini
+
 import eq from '../src/eq.js';
 
 describe('eq', () => {

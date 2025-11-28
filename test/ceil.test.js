@@ -1,3 +1,5 @@
+//Created with chatGPT 5 mini
+
 import ceil from '../src/ceil.js';
 import assert from 'assert';
 

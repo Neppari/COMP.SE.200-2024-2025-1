@@ -1,3 +1,5 @@
+//Created with chatGPT 5 mini
+
 import reduce from "../src/reduce";
 
 describe("reduce", () => {

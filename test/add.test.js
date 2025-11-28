@@ -1,3 +1,5 @@
+//Created with chatGPT 5 mini
+
 import add from '../src/add.js';
 
 describe('add', () => {

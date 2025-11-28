@@ -1,3 +1,5 @@
+//Created with chatGPT 5 mini
+
 import countBy from '../src/countby.js';
 
 describe('countBy', () => {
