@@ -1,3 +1,4 @@
+//Based on part 1 test plan documentation
 import memoize from '../src/memoize.js';
 
 describe('memoize', () => {
