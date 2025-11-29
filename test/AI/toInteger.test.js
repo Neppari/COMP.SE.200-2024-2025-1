@@ -1,6 +1,6 @@
 //Created with chatGPT 5 mini
 
-import toInteger from '../src/toInteger.js';
+import toInteger from '../../src/toInteger.js';
 
 // Basic test cases for toInteger function
 describe('toInteger', () => {

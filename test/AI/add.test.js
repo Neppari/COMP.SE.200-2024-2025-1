@@ -1,6 +1,6 @@
 //Created with chatGPT 5 mini
 
-import add from '../src/add.js';
+import add from '../../src/add.js';
 
 describe('add', () => {
     test('adds two positive integers', () => {

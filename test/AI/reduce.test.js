@@ -1,6 +1,6 @@
 //Created with chatGPT 5 mini
 
-import reduce from "../src/reduce";
+import reduce from "../../src/reduce";
 
 describe("reduce", () => {
     it("reduces an array to a single value", () => {

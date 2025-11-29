@@ -1,6 +1,6 @@
 //Created with chatGPT 5 mini
 
-import eq from '../src/eq.js';
+import eq from '../../src/eq.js';
 
 describe('eq', () => {
     it('compares objects and primitives correctly', () => {

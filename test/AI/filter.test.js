@@ -1,6 +1,6 @@
 //Created with chatGPT 5 mini
 
-import filter from '../src/filter.js';
+import filter from '../../src/filter.js';
 
 describe('filter', () => {
     it('returns objects matching predicate', () => {

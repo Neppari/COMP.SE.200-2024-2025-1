@@ -1,6 +1,6 @@
 //Created with chatGPT 5 mini
 
-import countBy from '../src/countby.js';
+import countBy from '../../src/countby.js';
 
 describe('countBy', () => {
     test("should handle example case correctly", () => {
