@@ -1,6 +1,6 @@
 import clamp from '../src/clamp.js';
 
-describe('clamp', () => {
+describe('clamp tests', () => {
   test('clamps 5 between 0 and 10', () => {
     // 5 is within [0, 10], so it should stay 5
     expect(clamp(5, 0, 10)).toBe(5);
@@ -21,12 +21,10 @@ describe('clamp', () => {
   });
 
   test('clamps 5 when lower is null (treated as 0)', () => {
-    // null lower bound is treated as 0; 5 in [0, 10] stays 5
     expect(clamp(5, null, 10)).toBe(5);
   });
 
   test('clamps string "5" between 0 and 10 (string coerced to number)', () => {
-    // "5" is coerced to 5, which is within [0, 10], so result should be 5
     expect(clamp('5', 0, 10)).toBe(5);
   });
 
