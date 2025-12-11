@@ -24,6 +24,23 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Run Prettier check
+        run: |
+          mkdir -p reports
+          npm run format 2>&1 | tee reports/prettier.log
+
+      - name: Run lint
+        run: |
+          mkdir -p reports
+          npm run lint 2>&1 | tee reports/lint.log
+
+      - name: Upload code quality reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: code-quality-reports
+          path: reports
+
       - name: Run unit tests (Jest) and generate HTML report
         run: npm test
         env:
