@@ -239,6 +239,15 @@ describe('memoize (AI recommended tests)', () => {
       expect(memoized1.cache instanceof Map).toBe(true);
       expect(memoized2.cache instanceof Map).toBe(true);
     });
+
+    test('falls back to Map when memoize.Cache is falsy', () => {
+      const fn = x => x;
+      memoize.Cache = null;
+
+      const memoized = memoize(fn);
+
+      expect(memoized.cache).toBeInstanceOf(Map);
+    });
   });
 
   describe('Edge cases and complex scenarios', () => {
@@ -312,6 +321,34 @@ describe('memoize (AI recommended tests)', () => {
 
       expect(r1).toBe(sym);
       expect(r2).toBe(sym);
+      expect(fn).toHaveBeenCalledTimes(1);
+    });
+
+    test('handles falsy primitive return values', () => {
+      const fn = jest.fn(x => x);
+      const memoized = memoize(fn);
+
+      const r0a = memoized(0);
+      const r0b = memoized(0);
+      const rf1 = memoized(false);
+      const rf2 = memoized(false);
+
+      expect(r0a).toBe(0);
+      expect(r0b).toBe(0);
+      expect(rf1).toBe(false);
+      expect(rf2).toBe(false);
+      expect(fn).toHaveBeenCalledTimes(2);
+    });
+
+    test('handles NaN return value', () => {
+      const fn = jest.fn(() => NaN);
+      const memoized = memoize(fn);
+
+      const r1 = memoized(1);
+      const r2 = memoized(1);
+
+      expect(Number.isNaN(r1)).toBe(true);
+      expect(Number.isNaN(r2)).toBe(true);
       expect(fn).toHaveBeenCalledTimes(1);
     });
 
