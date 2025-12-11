@@ -17,14 +17,34 @@ Individuals who remove or modify the license file will also carry the consequenc
 Install required dependencies (run in the project root):  
 Command: npm install
 
-**Don't do this, codebase gives errors instead of just tests**  
-Run in root folder to detect issues (bugs, bad patterns etc):  
-Command: npm run lint
+## Test and lint reports
 
-**Don't do this, codebase gives errors instead of just tests**  
-Run to check formatting, or to autofix it:  
-Command: npm run format  
-Command: npm run format:fix
+### Local
 
-Run tests in the root folder:  
-Command: npm test
+- **Run unit tests with HTML report**  
+  - **Command**: `npm test`  
+  - **HTML report location**: open `test-report/report.html` in a browser after the tests finish.
+
+- **Run Prettier check**  
+  - **Command**: `npm run format`  
+  - This only checks formatting; it does not write changes.
+
+- **Run ESLint**  
+  - **Command**: `npm run lint`
+
+### GitHub Actions (CI)
+
+On each push/PR to `main`/`master`, GitHub Actions runs:
+
+- **Prettier and ESLint**  
+  - Their outputs are saved under the `code-quality-reports` artifact as:
+    - `prettier.log`
+    - `lint.log`
+
+- **Jest unit tests with HTML report**  
+  - The Jest HTML report is uploaded as the `jest-html-report` artifact.
+  - Download the artifact from the workflow run and open `report.html` inside `test-report` to view the results.
+
+
+You can find the artifacts in GitHub by going to the project page -> Actions -> Select a finished workflow -> Scroll down to Artifacts.
+Note: Only the most recent commits have artifacts available
