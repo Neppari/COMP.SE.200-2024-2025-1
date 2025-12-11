@@ -5,6 +5,17 @@ export default {
     '^.+\\.[cm]?js$': 'babel-jest',
   },
   setupFilesAfterEnv: ['<rootDir>/test/setupTests.js'],
+  reporters: [
+    'default',
+    [
+      'jest-html-reporters',
+      {
+        publicPath: './test-report',
+        filename: 'report.html',
+        expand: true,
+      },
+    ],
+  ],
 };
 
 
