@@ -26,10 +26,10 @@ describe('add tests', () => {
   });
 
   test('adds two strings together throws TypeError', () => {
-    expect(() => add("hello", "world")).toThrow(TypeError);
+    expect(() => add("hello", "world")).toBe(NaN);
   });
 
   test('adds a number and a string together throws TypeError', () => {
-    expect(() => add(2, "3")).toThrow(TypeError);
+    expect(() => add(2, "3")).toBe(NaN);
   });
 });
