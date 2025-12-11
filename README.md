@@ -48,3 +48,5 @@ On each push/PR to `main`/`master`, GitHub Actions runs:
 
 You can find the artifacts in GitHub by going to the project page -> Actions -> Select a finished workflow -> Scroll down to Artifacts.
 Note: Only the most recent commits have artifacts available
+
+[![Coverage Status](https://coveralls.io/repos/github/Neppari/COMP.SE.200-2024-2025-1/badge.svg?branch=main)](https://coveralls.io/github/Neppari/COMP.SE.200-2024-2025-1?branch=main)
