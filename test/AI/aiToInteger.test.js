@@ -3,7 +3,7 @@
 import toInteger from '../../src/toInteger.js';
 
 // Basic test cases for toInteger function
-describe('toInteger', () => {
+describe('toInteger (AI recommended tests)', () => {
     it('should convert various values to integers', () => {
         expect(toInteger(3.2)).toBe(3);
         expect(toInteger(-3.8)).toBe(-3);

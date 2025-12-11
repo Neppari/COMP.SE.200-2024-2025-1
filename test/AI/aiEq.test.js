@@ -2,7 +2,7 @@
 
 import eq from '../../src/eq.js';
 
-describe('eq', () => {
+describe('eq (AI recommended tests)', () => {
     it('compares objects and primitives correctly', () => {
         const object = { 'a': 1 };
         const other = { 'a': 1 };

@@ -2,7 +2,7 @@
 
 import add from '../../src/add.js';
 
-describe('add', () => {
+describe('add (AI recommended tests)', () => {
     test('adds two positive integers', () => {
         expect(add(6, 4)).toBe(10);
     });

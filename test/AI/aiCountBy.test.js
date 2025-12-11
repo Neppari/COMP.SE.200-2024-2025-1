@@ -2,7 +2,7 @@
 
 import countBy from '../../src/countby.js';
 
-describe('countBy', () => {
+describe('countBy (AI recommended tests)', () => {
     test("should handle example case correctly", () => {
         const users = [
             { 'user': 'barney', 'active': true },

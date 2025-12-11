@@ -2,7 +2,7 @@
 
 import filter from '../../src/filter.js';
 
-describe('filter', () => {
+describe('filter (AI recommended tests)', () => {
     it('returns objects matching predicate', () => {
         const users = [
             { user: 'barney', active: true },

@@ -2,7 +2,7 @@
 
 import reduce from "../../src/reduce";
 
-describe("reduce", () => {
+describe("reduce (AI recommended tests)", () => {
     it("reduces an array to a single value", () => {
         expect(reduce([1, 2], (sum, n) => sum + n, 0)).toBe(3);
     });

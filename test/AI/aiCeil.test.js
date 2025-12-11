@@ -3,7 +3,7 @@
 import ceil from '../../src/ceil.js';
 import assert from 'assert';
 
-describe('ceil', function () {
+describe('ceil (AI recommended tests)', function () {
     it('ceil(4.006) should return 5', function () {
         assert.strictEqual(ceil(4.006), 5);
     });
